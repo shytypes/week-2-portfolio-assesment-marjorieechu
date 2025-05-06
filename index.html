@@ -1,27 +1,161 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <!-- DO NOT CHANGE CODE WITHIN THE HEAD ELEMENT -->
   <!-- UNLESS YOU KNOW WHAT YOU"RE DOING-->
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
-    <!-- add fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
-      rel="stylesheet"
-    />
+    <title>Marj's-portfolio</title>
     <!-- local style -->
     <link rel="stylesheet" href="styles/global.css" />
   </head>
   <body>
     <!-- Header Area -->
-    <header></header>
+    <header>
+      <section id="header-view-1">
+        <div id="profile-image-container">
+          <div><p class="name">Marjorie Echu</p></div>
+          <div><p id="header-4">Cloud DevOps Engineer</p></div>
+          <div>
+            <img
+              id="Marj-image"
+              height="100"
+              width="100"
+              src="assets/images/Marj.jpg"
+              alt="@geniemarj"
+            />
+          </div>
+        </div>
+        <div class="body-font" id="bio-container">
+          <span class="bio"
+            >email:
+            <a
+              href="https://www.mar2eboh@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              >marj2eboh@gmail.com</a
+            ></span
+          >
+          <span class="bio">phone: +234-08060541558</span>
+        </div>
+      </section>
+      <section id="header-view-2">
+        <p class="body-font">
+          <span class="title">About Me</span><br />
+          An IT enthusiast who thrives on learning new technologies and solving
+          complex problems.<br />
+          I've developed a unique blend of skills spanning from the corporate
+          world of business to the<br />
+          IT world of Agile Methodologies<br />
+        </p>
+      </section>
+    </header>
     <!-- Main Area -->
-    <main>
-      <h1>My Amazing Portfolio</h1>
+    <main class="body-font">
+      <section class="bspacer" id="header-view-3">
+        <p class="title">Projects</p>
+        <ul>
+          <li>
+            Deployed Opensis app on Docker Compose, enabling API calls between
+            frontend and backend containers.<br />
+          </li>
+          <li>
+            Imported and exported Grafana dashboards to and from an S3 bucket.
+          </li>
+          <li>Currently deploying Bookstack in a K8s cluster.</li>
+          <li>
+            Collaborating on an AWS project to enhance security and cost
+            management for a private <br />
+            infrastructure.
+          </li>
+        </ul>
+      </section>
+      <section class="bspacer" id="header-view-3">
+        <p class="title">Experience</p>
+        <div>
+          <p>
+            5 years of corporate experience as an Insurance Underwriter before
+            transitioning to IT
+          </p>
+        </div>
+        <div>
+          <h4 id="header-4">Linux Administrator(2 years)</h4>
+          <p>
+            Managed and maintained Linux-based systems, ensuring high
+            availability and performance.
+          </p>
+        </div>
+      </section>
+      <section class="bspacer" id="header-view-3">
+        <div>
+          <h4 id="header-4">Cloud DevOps(3 years)</h4>
+          <p>
+            Designed and implemented cloud-based solutions using AWS, focusing
+            on scalability, security <br />
+            and cost-effectiveness.
+          </p>
+          <p>
+            Worked with containerization technologies like Docker and Kubernetes
+            to deploy and manage <br />
+            applications.
+          </p>
+        </div>
+      </section>
+      <section class="bspacer" id="header-view-3">
+        <p class="title">Education</p>
+        <p>Bachelor of science, Benue state University 2006.</p>
+      </section>
+      <section class="bspacer" id="header-view-3">
+        <p class="title">Goal</p>
+        <p>
+          To become a Kubernetes Engineer within the next year, with a strong
+          foundation in <br />
+          software development, deployment and management.
+        </p>
+      </section>
+      <section class="bspacer" id="header-view-3">
+        <p>
+          Feel free to explore my Grafana project:
+          <a
+            href="https://github.com/marjorieechu/Grafana-dashboard-import-export"
+          >
+            Grafana Dashboard Import/Export</a
+          >
+        </p>
+      </section>
+      <section id="header-view-4">
+        <h3>Let's Connect!</h3>
+        <form>
+          <fieldset>
+            <legend>Fill in your details below</legend>
+
+            <label for="firstName"
+              >First Name:
+              <input type="text" id="firstName" name="firstName" required />
+            </label>
+
+            <label for="lastName"
+              >Last Name:
+              <input type="text" id="lastName" name="lastName" required />
+            </label>
+
+            <label for="email"
+              >Email:
+              <input type="email" id="email" name="email" required />
+            </label>
+
+            <label for="topic"
+              >Topic:
+              <input type="text" id="topic" name="topic" required />
+            </label>
+          </fieldset>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+      <section>
+        <ul id="result-view"></ul>
+      </section>
     </main>
+    <script src="./script.js"></script>
   </body>
 </html>
