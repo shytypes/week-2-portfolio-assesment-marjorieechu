@@ -23,6 +23,6 @@ const handleFormSubmit = (e) => {
   )
   console.log(userDataAsJson)
 
-  resultView.innerHTML = `<p id="response">Thank you ${userData.firstName} for reaching out, I will contact you asap on ${userData.topic}.<p>`
+  resultView.innerHTML = `<p id="response">Thank you ${userData.firstName} ${userData.lastName} for reaching out, I will contact you asap on ${userData.topic} via ${userData.email}.<p>`
 }
 form.addEventListener('submit', handleFormSubmit)
